@@ -4,7 +4,7 @@
   --accent-color-dark: rgba(226, 77, 54, 1);
   --accent-color: rgba(89, 110, 166, 1);
   --accent-color-dark: rgba(71, 88, 133, 1);
-  --dark-color: rgba(104, 109, 115, 1);
+  --dark-color: rgb(78, 175, 102);
   --dark-color-alt: rgba(156, 160, 165, 1);
   --medium-color: #bbb;
   --light-color: #eee;
@@ -41,7 +41,7 @@ p, ol li, ul li {
 .hero {
   background: var(--dark-color);
   color: white;
-  padding: calc(1rem + 8vh) calc(1rem + 3vw) calc(3rem + 10vh) calc(1rem + 3vw);
+  padding: 2rem
 }
 .hero h1 {
   font-size: calc(1rem + 5vw);

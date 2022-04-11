@@ -36,10 +36,10 @@ except:
 # Insert Records
 query = "insert into Users (first_name, last_name, email, password, created_at) values (%s, %s, %s, %s, %s)"
 values = [
-  ('rick','gessner','rick@gessner.com', 'abc123', '2020-02-20 12:00:00'),
-  ('ramsin','khoshabeh','ramsin@khoshabeh.com', 'abc123', '2020-02-20 12:00:00'),
-  ('al','pisano','al@pisano.com', 'abc123', '2020-02-20 12:00:00'),
-  ('truong','nguyen','truong@nguyen.com', 'abc123', '2020-02-20 12:00:00')
+  ('Rusul','AlBusultan','rusul@albusultan.com', 'abc123', '2020-02-20 12:00:00'),
+  ('Raymond','Urbina','raymond@urbina.com', 'abc123', '2020-02-20 12:00:00'),
+  ('Marcin','Kierebinski','marcin@Kierebinski.com', 'abc123', '2020-02-20 12:00:00'),
+  ('Nicholas','Munoz','nicholas@munoz.com', 'abc123', '2020-02-20 12:00:00')
 ]
 cursor.executemany(query, values)
 db.commit()
