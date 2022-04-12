@@ -36,7 +36,7 @@ except:
 # Insert Records
 query = "insert into Users (first_name, last_name, email, password, created_at) values (%s, %s, %s, %s, %s)"
 values = [
-  ('Rusul','AlBusultan','rusul@albusultan.com', 'abc123', '2020-02-20 12:00:00'),
+  ('Rusul','Al Busultan','rusul@albusultan.com', 'abc123', '2020-02-20 12:00:00'),
   ('Raymond','Urbina','raymond@urbina.com', 'abc123', '2020-02-20 12:00:00'),
   ('Marcin','Kierebinski','marcin@Kierebinski.com', 'abc123', '2020-02-20 12:00:00'),
   ('Nicholas','Munoz','nicholas@munoz.com', 'abc123', '2020-02-20 12:00:00')

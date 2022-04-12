@@ -10,17 +10,17 @@ body {
   padding:1.5rem;
 }
 
-.grad1 {
-  background: linear-gradient(to bottom right, blue, yellow);
+.grad {
+  background-image: linear-gradient(to bottom right, blue, yellow);
   color: white;
   padding: 2rem;
 }
-.grad1 h1 {
-  font-size:4rem;
+.grad h1 {
+  font-size:5rem;
   padding:1rem;
   margin: 0px;
 }
-.grad1 p {
+.grad p {
   margin: 0px 1rem;
   color: #ccc;
   font-size: 1.5rem;
@@ -29,7 +29,7 @@ body {
 table {
   table-layout: fixed;
   border-collapse: collapse;
-  width: 100%;
+  width: 70%;
 }
 table th {
   background: rgb(36, 59, 186);
@@ -45,8 +45,16 @@ table tr:nth-child(odd) {
   background-color: white;
 }
 
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
 .head{
   font-size: 2.5rem;
-  background: rgb(251, 244, 116);
+  /* background: rgb(192, 195, 102); */
+  background-image: linear-gradient(to bottom right, blue, yellow);
+  color:white;
   
 }
+
