@@ -1,6 +1,6 @@
-* {
+/* * {
   text-align: center;
-}
+} */
 
 body {
   font-size: 1.5rem;
@@ -11,19 +11,22 @@ body {
 }
 
 .grad {
-  background-image: linear-gradient(to bottom right, blue, yellow);
+  background-image: linear-gradient(to bottom right, Black, rgb(195, 104, 168));
   color: white;
   padding: 2rem;
+  text-align: center;
 }
 .grad h1 {
   font-size:5rem;
   padding:1rem;
   margin: 0px;
+  text-align: center;
 }
 .grad p {
   margin: 0px 1rem;
   color: #ccc;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 table {
@@ -32,7 +35,7 @@ table {
   width: 70%;
 }
 table th {
-  background: rgb(36, 59, 186);
+  background: rgb(72, 73, 78);
   color: #fafafa;
 }
 table th, table td {
@@ -53,8 +56,11 @@ table.center {
 .head{
   font-size: 2.5rem;
   /* background: rgb(192, 195, 102); */
-  background-image: linear-gradient(to bottom right, blue, yellow);
+  background: rgb(98, 48, 89);
   color:white;
-  
+  text-align: center;
 }
 
+.p2{
+  text-align: center;
+}
