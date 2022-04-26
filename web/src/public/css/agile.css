@@ -61,6 +61,24 @@ table.center {
   text-align: center;
 }
 
+.but{
+  text-align: center;
+  padding:1rem;
+  border: 1rem;
+  background-color: rgb(177, 152, 172);
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .p2{
   text-align: center;
 }

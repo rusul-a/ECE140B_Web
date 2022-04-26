@@ -39,7 +39,8 @@ values = [
   ('Rusul','Al Busultan','ralbusul@ucsd.edu', 'abc123', '2020-02-20 12:00:00'),
   ('Raymond','Urbina','raurbina@ucsd.edu', 'abc123', '2020-02-20 12:00:00'),
   ('Marcin','Kierebinski','mrkiereb@ucsd.edu', 'abc123', '2020-02-20 12:00:00'),
-  ('Nicholas','Munoz','nmunoz@ucsd.edu', 'abc123', '2020-02-20 12:00:00')
+  ('Nicholas','Munoz','nmunoz@ucsd.edu', 'abc123', '2020-02-20 12:00:00'),
+  ('Karen','Hernandez','klhernan@ucsd.edu', 'abc123', '2020-02-20 12:00:00')
 ]
 cursor.executemany(query, values)
 db.commit()
