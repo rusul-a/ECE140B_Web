@@ -83,3 +83,9 @@ table.center {
 .p2{
   text-align: center;
 }
+.center1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
