@@ -26,6 +26,12 @@ def get_product(req):
 def get_KVP(req):
   return render_to_response('templates/kvp.html', {}, request=req)
 
+def get_mockup(req):
+  return render_to_response('templates/mockup.html', {}, request=req)
+
+def get_ui_laws(req):
+  return render_to_response('templates/ui_laws.html', {}, request=req)
+
 ''' Route Configurations '''
 if __name__ == '__main__':
   config = Configurator()
@@ -41,6 +47,12 @@ if __name__ == '__main__':
 
   config.add_route('get_KVP', '/kvp')
   config.add_view(get_KVP, route_name='get_KVP')
+
+  config.add_route('get_mockup', '/mockup')
+  config.add_view(get_mockup, route_name='get_mockup')
+
+  config.add_route('get_ui_laws', '/ui_laws')
+  config.add_view(get_ui_laws, route_name='get_ui_laws')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
