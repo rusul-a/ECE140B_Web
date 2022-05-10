@@ -2,26 +2,42 @@
   text-align: center;
 } */
 
-body {
+html, body {
   font-size: 1.5rem;
   background: white;
-  margin: 0px;
+  margin: 0;
   font-family: serif;
-  padding:1.5rem;
+  /* padding:1.5rem; */
+}
+
+.button {
+  background-color: #1129b3;
+  border: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  border-radius: 12px;
 }
 
 .grad {
-  background-image: linear-gradient(to bottom right, Black, rgb(195, 104, 168));
+  /* background-image: linear-gradient(to bottom right, Black, rgb(195, 104, 168)); */
+  background-image: linear-gradient(to bottom, rgb(159, 94, 223),white);
   color: white;
   padding: 2rem;
   text-align: center;
 }
+
 .grad h1 {
   font-size:5rem;
   padding:1rem;
   margin: 0px;
   text-align: center;
 }
+
 .grad p {
   margin: 0px 1rem;
   color: #ccc;
@@ -35,16 +51,19 @@ table {
   border-collapse: collapse;
   width: 70%;
 }
+
 table th {
   background: rgb(72, 73, 78);
   color: #fafafa;
 }
+
 table th, table td {
   margin: 0px;
   text-align: center;
   padding: 0.66rem;
   border: 1px solid;
 }
+
 table tr:nth-child(odd) {
   background-color: white;
 }
@@ -57,23 +76,26 @@ table.center {
 .head{
   font-size: 2.5rem;
   /* background: rgb(192, 195, 102); */
-  background: rgb(98, 48, 89);
+  /* background: rgb(98, 48, 89); */
+  background-image: linear-gradient(to bottom, rgb(122, 15, 164),rgb(37, 40, 144));
   color:white;
   text-align: center;
 }
 
-.but{
-  text-align: center;
-  padding:1rem;
-  border: 1rem;
-  background-color: rgb(177, 152, 172);
-  font-size:1.5rem;
-  
+.column-container {
+  display: grid;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  gap: 0.5rem;
+  background-color: #1847d5;
+  padding: 0.7rem;
 }
-.column {
-  float: left;
-  width: 31%;
-  padding: 10px;
+
+.column-container > div {
+  background-color: rgba(186, 153, 234, 0.8);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 /* Clear floats after the columns */
@@ -82,12 +104,31 @@ table.center {
   display: table;
   clear: both;
 }
+
 .p2{
   text-align: center;
 }
+
 .center1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.scaling{
+  transform: scale(0.7);
+}
+.div-head-main{
+   width: 100%;
+}
+.div-head-main h1 {
+  font-size:5rem;
+  padding:1rem;
+  margin: 0px;
+  text-align: center;
+  color:black;
+}
+.diver > div{
+  margin:1rem;
 }
