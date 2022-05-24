@@ -23,6 +23,11 @@ html, body {
   border-radius: 12px;
 }
 
+.button:hover {
+  background-color: white;
+  color: #4f60c4;
+}
+
 .grad {
   /* background-image: linear-gradient(to bottom right, Black, rgb(195, 104, 168)); */
   background-image: linear-gradient(to bottom, rgb(159, 94, 223),white);
@@ -73,6 +78,27 @@ table.center {
   margin-right:auto;
 }
 
+/* horizontal line with text label */
+.separator {
+  font-size: calc(1rem + 1vw);
+  color: var(--accent-color);
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  margin: calc(2rem + 3vw) auto;
+}
+.separator::before, .separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--dark-color);
+}
+.separator::before {
+  margin-right: 1rem;
+}
+.separator::after {
+  margin-left: 1rem;
+}
 .head{
   font-size: 2.5rem;
   /* background: rgb(192, 195, 102); */
@@ -135,7 +161,6 @@ p span{
   text-align: center;
   color:black;
 }
-.diver > div{
-  margin-left:1rem;
-  margin-right: 1rem;
+.hi{
+  margin:2rem;
 }
