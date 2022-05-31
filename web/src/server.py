@@ -35,6 +35,9 @@ def get_ui_laws(req):
 def get_costs(req):
   return render_to_response('templates/costs.html', {}, request=req)
 
+def get_pivots(req):
+  return render_to_response('templates/pivots.html', {}, request=req)
+
 ''' Route Configurations '''
 if __name__ == '__main__':
   config = Configurator()
@@ -59,6 +62,9 @@ if __name__ == '__main__':
 
   config.add_route('get_costs', '/costs')
   config.add_view(get_costs, route_name='get_costs')
+
+  config.add_route('get_pivots', '/pivots')
+  config.add_view(get_pivots, route_name='get_pivots')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
